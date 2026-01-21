@@ -1,0 +1,19 @@
+Surogantni (referentni) primjer aplikacije – opis
+
+Za surogatni primjer nije odabrana nijedna konkretna javno dostupna aplikacija.
+Predloženi informacijski sustav za upravljanje kruzerskim putovanjima zamišljen je kao poslovni informacijski sustav kruzerske kompanije koji se koristi unutar 
+organizacije, ali istovremeno omogućuje pristup krajnjim korisnicima putem kontroliranog front-office sučelja.
+Sustav se sastoji od dvije razine korištenja:
+
+back-office, namijenjen zaposlenicima kruzerske kompanije (operateri i administratori)
+front-office, namijenjen registriranim putnicima za pregled putovanja i izradu rezervacija
+
+Sustav neće biti javno distribuiran putem aplikacijskih trgovina poput Google Play ili App Storea, već će se 
+koristiti putem web sučelja s kontroliranim pristupom.
+Unatoč tome, informacijski sustav će imati standardna korisnička sučelja karakteristična
+za poslovne informacijske sustave, uključujući:
+
+-rad s obrascima (forme) za unos i obradu podataka
+-pregled i prikaz podataka u tabličnom i izvještajnom obliku
+-mogućnost uvoza i izvoza podataka u Word i Excel dokumente
+-generiranje izvještaja za operativne i upravljačke potrebe

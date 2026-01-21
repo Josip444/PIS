@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.0">
+  <diagram id="ER1" name="ER - Kruzer IS">
+    <mxGraphModel dx="1584" dy="863" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E_KRUZER" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="KRUZER&#xa;PK: kruzer_id&#xa;naziv&#xa;kapacitet_putnika" vertex="1">
+          <mxGeometry height="110" width="200" x="160" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E_TIPKABINE" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="TIP_KABINE&#xa;PK: tip_kabine_id&#xa;naziv&#xa;max_osoba" vertex="1">
+          <mxGeometry height="110" width="200" x="20" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="E_KABINA" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="KABINA&#xa;PK: kabina_id&#xa;broj_kabine&#xa;paluba" vertex="1">
+          <mxGeometry height="110" width="200" x="160" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="E_RUTA" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="RUTA&#xa;PK: ruta_id&#xa;naziv_rute" vertex="1">
+          <mxGeometry height="90" width="200" x="420" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="E_LUKA" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="LUKA&#xa;PK: luka_id&#xa;naziv&#xa;drzava" vertex="1">
+          <mxGeometry height="110" width="200" x="670" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="E_RUTA_LUKA" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="RUTA_LUKA (itinerer)&#xa;PK: (ruta_id, luka_id)&#xa;redni_broj&#xa;datum_dolaska&#xa;datum_odlaska" vertex="1">
+          <mxGeometry height="140" width="260" x="560" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="E_PUTOVANJE" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="PUTOVANJE&#xa;PK: putovanje_id&#xa;datum_polaska&#xa;datum_povratka&#xa;osnovna_cijena" vertex="1">
+          <mxGeometry height="130" width="220" x="410" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="E_PUTNIK" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="PUTNIK&#xa;PK: putnik_id&#xa;ime&#xa;prezime&#xa;email" vertex="1">
+          <mxGeometry height="120" width="220" x="750" y="415" as="geometry" />
+        </mxCell>
+        <mxCell id="E_AGENCIJA" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="AGENCIJA&#xa;PK: agencija_id&#xa;naziv&#xa;kontakt_email" vertex="1">
+          <mxGeometry height="100" width="220" x="750" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="E_REZERVACIJA" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="REZERVACIJA&#xa;PK: rezervacija_id&#xa;datum_rezervacije&#xa;status&#xa;ukupna_cijena" vertex="1">
+          <mxGeometry height="130" width="240" x="430" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="E_PLACANJE" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="PLACANJE&#xa;PK: placanje_id&#xa;iznos&#xa;datum&#xa;status_transakcije" vertex="1">
+          <mxGeometry height="120" width="240" x="80" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="E_RACUN" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="RACUN&#xa;PK: racun_id&#xa;broj_racuna&#xa;datum_izdavanja" vertex="1">
+          <mxGeometry height="100" width="240" x="80" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="R_KRUZER_KABINA" edge="1" parent="1" source="E_KRUZER" style="endArrow=none;html=1;strokeColor=#000000;" target="E_KABINA" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_TIP_KABINE" edge="1" parent="1" source="E_TIPKABINE" style="endArrow=none;html=1;strokeColor=#000000;" target="E_KABINA" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_RUTA_PUTOVANJE" edge="1" parent="1" source="E_RUTA" style="endArrow=none;html=1;strokeColor=#000000;" target="E_PUTOVANJE" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_KRUZER_PUTOVANJE" edge="1" parent="1" source="E_KRUZER" style="endArrow=none;html=1;strokeColor=#000000;" target="E_PUTOVANJE" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_RUTA_RL" edge="1" parent="1" source="E_RUTA" style="endArrow=none;html=1;strokeColor=#000000;" target="E_RUTA_LUKA" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_LUKA_RL" edge="1" parent="1" source="E_LUKA" style="endArrow=none;html=1;strokeColor=#000000;" target="E_RUTA_LUKA" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_PUTOVANJE_REZ" edge="1" parent="1" source="E_PUTOVANJE" style="endArrow=none;html=1;strokeColor=#000000;" target="E_REZERVACIJA" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_PUTNIK_REZ" edge="1" parent="1" source="E_PUTNIK" style="endArrow=none;html=1;strokeColor=#000000;" target="E_REZERVACIJA" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_AG_REZ" edge="1" parent="1" source="E_AGENCIJA" style="endArrow=none;html=1;strokeColor=#000000;dashed=1;" target="E_REZERVACIJA" value="0..1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_KABINA_REZ" edge="1" parent="1" source="E_KABINA" style="endArrow=none;html=1;strokeColor=#000000;" target="E_REZERVACIJA" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_REZ_PLAC" edge="1" parent="1" source="E_REZERVACIJA" style="endArrow=none;html=1;strokeColor=#000000;" target="E_PLACANJE" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="R_REZ_RAC" edge="1" parent="1" source="E_REZERVACIJA" style="endArrow=none;html=1;strokeColor=#000000;" target="E_RACUN" value="1:1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

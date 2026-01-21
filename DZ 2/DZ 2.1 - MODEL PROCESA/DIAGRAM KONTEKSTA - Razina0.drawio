@@ -1,0 +1,112 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Page-1" id="iV_VFleQ8CNE7PWAxcLN">
+    <mxGraphModel dx="1584" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="PUTNIK / KORISNIK" vertex="1">
+          <mxGeometry height="100" width="150" x="60" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-12" edge="1" parent="1" source="gYXIuQpO7m4jZ66XorCI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="490.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-13" connectable="0" parent="gYXIuQpO7m4jZ66XorCI-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="ponuda putovanja&lt;div&gt;potvrda rezervacije&lt;/div&gt;&lt;div&gt;račun /potvrda&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0459" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-18" edge="1" parent="1" source="gYXIuQpO7m4jZ66XorCI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-19" connectable="0" parent="gYXIuQpO7m4jZ66XorCI-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="potvrde rezervacije&lt;div&gt;statusi rezervacija&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0222" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-22" edge="1" parent="1" source="gYXIuQpO7m4jZ66XorCI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="510.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-23" connectable="0" parent="gYXIuQpO7m4jZ66XorCI-22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="izvještaj&lt;div&gt;statistika&lt;/div&gt;&lt;div&gt;pregled popunjenosti&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2884" y="-5" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-27" edge="1" parent="1" source="gYXIuQpO7m4jZ66XorCI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-28" connectable="0" parent="gYXIuQpO7m4jZ66XorCI-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="računi&lt;div&gt;podaci za knjiženje&lt;/div&gt;&lt;div&gt;prihodi&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2784" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="INFORMACISKI SUSTAV KRUZERA" vertex="1">
+          <mxGeometry height="110" width="164" x="310" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-4" edge="1" parent="1" source="gYXIuQpO7m4jZ66XorCI-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="gYXIuQpO7m4jZ66XorCI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-15" edge="1" parent="1" source="gYXIuQpO7m4jZ66XorCI-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-16" connectable="0" parent="gYXIuQpO7m4jZ66XorCI-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="upiti o dostupnosti&lt;div&gt;razervacije za klijente&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.334" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="TURISTIČKA AGNECIJA/PARTNER" vertex="1">
+          <mxGeometry height="110" width="150" x="40" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-20" edge="1" parent="1" source="gYXIuQpO7m4jZ66XorCI-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="530.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-21" connectable="0" parent="gYXIuQpO7m4jZ66XorCI-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="upravljanje rutama&lt;div&gt;upravljanje putovanjima&lt;/div&gt;&lt;div&gt;upravljanje kurezrima i kabinama&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2887" y="3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="ADMINISTRATOR/&lt;div&gt;OPERATER&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="144" x="650" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-25" edge="1" parent="1" source="gYXIuQpO7m4jZ66XorCI-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-26" connectable="0" parent="gYXIuQpO7m4jZ66XorCI-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="potvrda plaćanja&lt;div&gt;status transakcije&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3475" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="RACUNOVODSTVO/&lt;div&gt;FINANCIJE&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="156" x="560" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="240" y="430" as="sourcePoint" />
+            <mxPoint x="354" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-9" connectable="0" parent="gYXIuQpO7m4jZ66XorCI-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="registracija / prijava&lt;div&gt;pretraga putovanja&lt;/div&gt;&lt;div&gt;rezervacija&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.006" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gYXIuQpO7m4jZ66XorCI-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;autosize=1;resizable=0;" value="P0" vertex="1">
+          <mxGeometry height="30" width="40" x="320" y="630" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

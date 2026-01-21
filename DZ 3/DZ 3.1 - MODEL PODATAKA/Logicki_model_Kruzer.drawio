@@ -1,0 +1,88 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0">
+  <diagram name="Logicki model - Kruzer" id="logic-kruzer-1">
+    <mxGraphModel dx="2605" dy="1805" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;KRUZER&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; kruzer_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;naziv string NOT NULL UNIQUE&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;kapacitet_putnika int NOT NULL&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="290" x="2070" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;TIP_KABINE&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; tip_kabine_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;naziv string NOT NULL UNIQUE&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;max_osoba int NOT NULL&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="290" x="2090" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;KABINA&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; kabina_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;broj_kabine string NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;paluba string NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; kruzer_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; tip_kabine_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;UNIQUE(kruzer_id, broj_kabine)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="290" x="1620" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;RUTA&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; ruta_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;naziv_rute string NOT NULL UNIQUE&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="290" x="710" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;RUTA_LUKA&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; (ruta_id, redni_broj)&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; ruta_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; luka_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;redni_broj int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;datum_dolaska datetime&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;datum_odlaska datetime&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;CHECK(datum_dolaska &amp;lt;= datum_odlaska)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="290" x="500" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;PUTOVANJE&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; putovanje_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;datum_polaska date NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;datum_povratka date NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;osnovna_cijena decimal NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; ruta_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; kruzer_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;CHECK(datum_polaska &amp;lt; datum_povratka)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="290" x="1590" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;PUTNIK&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; putnik_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;ime string NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;prezime string NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;email string NOT NULL UNIQUE&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="290" x="1390" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;AGENCIJA&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; agencija_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;naziv string NOT NULL UNIQUE&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;kontakt_email string NOT NULL UNIQUE&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="290" x="1700" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;REZERVACIJA&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; rezervacija_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;datum datetime NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;status string NOT NULL (ENUM)&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;ukupna_cijena decimal NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; putovanje_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; putnik_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; kabina_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; agencija_id int NULL&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="320" x="995" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;PLACANJE&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; placanje_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;iznos decimal NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;datum datetime NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;status_transakcije string NOT NULL (ENUM)&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; rezervacija_id int NOT NULL&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="190" width="290" x="1010" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;RACUN&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; racun_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;broj_racuna string NOT NULL UNIQUE&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;datum_izdavanja date NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;FK&amp;lt;/b&amp;gt; rezervacija_id int NOT NULL UNIQUE  (1:1)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="290" x="1025" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" source="4" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="2" value="kruzer_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" source="4" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="3" value="tip_kabine_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" source="8" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="5" value="ruta_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" source="8" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="2" value="kruzer_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="18" edge="1" parent="1" source="7" style="endArrow=none;html=1;rounded=0;strokeWidth=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="5" value="ruta_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="19" edge="1" parent="1" source="7" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="6" value="luka_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="20" edge="1" parent="1" source="11" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="8" value="putovanje_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" source="11" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="9" value="putnik_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" source="11" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="4" value="kabina_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" source="11" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="10" value="agencija_id (opt)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" source="12" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="11" value="rezervacija_id">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" source="13" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="11" value="rezervacija_id (1:1)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tVOVn9h97Tb1GkIYugM2-25" edge="1" parent="1" source="7" style="endArrow=none;html=1;rounded=0;strokeWidth=1;" target="6" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="680" y="359" as="sourcePoint" />
+            <mxPoint x="50" y="331" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=12;strokeWidth=1;" value="&lt;div style=&#39;font-size:14px;font-weight:700;margin-bottom:6px;&#39;&gt;LUKA&lt;/div&gt;&lt;div style=&#39;font-size:12px;line-height:1.2;&#39;&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;&amp;lt;b&amp;gt;PK&amp;lt;/b&amp;gt; luka_id int NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;naziv string NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;drzava string NOT NULL&lt;/div&gt;&lt;div style=&#39;margin:2px 0;&#39;&gt;UNIQUE(naziv, drzava)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="290" x="550" y="470" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
